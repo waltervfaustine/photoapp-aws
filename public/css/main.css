@@ -1,0 +1,60 @@
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.button {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+#delete-btn:hover {
+    background-color: #ff0000;
+}
+
+.image-place img {
+    padding: 10px;
+    width: 275px;
+    height: 170px;
+}
+
+.message {
+    background-color: #00cc00;
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+}
+
+.image-place {
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#upload_image::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#upload_image::before {
+    content: 'Cainamist: Select photo to Upload';
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+#upload_image:hover::before {
+    border-color: black;
+}
+
+#upload_image:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
